@@ -1,28 +1,31 @@
-c = input("What do you want? (+; -; *; /; %; **0.5; **2; **)\n")
-d = ['+', '-', '*',  '/', '%', '**0.5', '**2', '**']
-if c != d:
+move = input("What do you want? (+; -; *; /; %; **0.5; **2; **)\n")
+_array = ['+', '-', '*', '/', '%', '**0.5', '**2', '**']
+
+if move in _array:
+    print("")
+else:
     print("Wrong condition")
     exit(0)
-a = int(input("Enter number\n"))
-if c == '**0.5':
-    print (a ** .5)
+
+first_number = int(input("Enter number\n"))
+
+if move == '**0.5':
+    print(first_number ** .5)
     exit(0)
-elif c == '**2':
-    print (a ** 2)
+elif move == '**2':
+    print(first_number ** 2)
     exit(0)
 else:
-    b = int(input("Enter second number\n"))
-if c == '+':
-    print(a + b)
-elif c == '-':
-    print (a - b)
-elif c == '*':
-    print (a * b)
-elif c == '/':
-    print (a / b)
-elif c == '%':
-    print (a % b)
-elif c == '**':
-    print (a ** b)
-elif c != c:
-    print("Wrong condition")
+    second_number = int(input("Enter second number\n"))
+if move == '+':
+    print(first_number + second_number)
+elif move == '-':
+    print(first_number - second_number)
+elif move == '*':
+    print(first_number * second_number)
+elif move == '/':
+    print(first_number / second_number)
+elif move == '%':
+    print(first_number % second_number)
+elif move == '**':
+    print(first_number ** second_number)
