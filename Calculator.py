@@ -1,29 +1,20 @@
 def qwiz(calculation_location):
     def check(symbol, first_number, second_number):
-
         def symbol_check(symb=symbol):
 
             symbol_list = ["+", "-", "*", "/", "%", "**"]
             if symb in symbol_list:
                 return True
-            else:
-                print("We can't perform this action")
-                return
+            print("We can't perform this action")
 
         def number_check(numb1=first_number, numb2=second_number):
 
             if numb1.isdigit() and numb2.isdigit():
-                numb1 = int(numb1)
-                numb1 = int(numb2)
                 return True
-            else:
-                print("You need input number ")
-                return
+            print("You need input number ")
 
         if symbol_check() and number_check() == True:
             return calculation_location(symbol, first_number, second_number)
-        else:
-            return None
 
     return check
 
@@ -56,7 +47,7 @@ def main():
         else:
             print(f"Great! \nYour result is:\t{operation}")
 
-        final_ask = str.lower(input("Want to continue?: Yes/No\t"))
+        final_ask = (input("Want to continue?: Yes/No\t")).lower()
         if final_ask == "yes":
             print("Okay Bro")
         elif final_ask == "no":

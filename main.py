@@ -1,3 +1,6 @@
+from code_parts.functions import calculation
+
+
 def main():
     while True:
         operation = calculation(
@@ -11,9 +14,11 @@ def main():
         else:
             print(f"Great! \nYour result is:\t{operation}")
 
-        final_ask = str.lower(input("Want to continue?: Yes/No\t"))
+        final_ask = input("Want to continue?: Yes/No\t").lower()
         if final_ask == "yes":
             print("Okay Bro")
         elif final_ask == "no":
             print("Okay Bro")
             break
+
+main()

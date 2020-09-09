@@ -1,3 +1,7 @@
+from code_parts.all_wrapper import qwiz
+
+
+@qwiz
 def calculation(symbol: str, first: str, second: str):
     first = int(first)
     second = int(second)

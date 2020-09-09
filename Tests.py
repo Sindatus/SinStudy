@@ -184,5 +184,18 @@
 # print(c(input(), input(), input()))
 
 
-q = "0.5"
-print(q.isdecimal())
+# class Person:
+#     engine = "unity"
+#     work = "programmer"
+#     justfor = 5
+#     def bimb(self, a, b):
+#         self.a = a
+#         self.b = b
+#         accaunt = {'name':self.a, 'balance': self.b}
+#
+# Juny = Person
+# print(Juny.bimb('Jun', 10000))
+
+a = (input("yes/no"))
+x = a.lower()
+print(x)
