@@ -1,7 +1,7 @@
-from code_parts.all_wrapper import qwiz
+from code_parts.all_wrapper import num_operation
 
 
-@qwiz
+@num_operation
 def calculation(symbol: str, first: str, second: str):
     first = int(first)
     second = int(second)
